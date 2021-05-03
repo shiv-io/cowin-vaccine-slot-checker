@@ -20,7 +20,7 @@ class SlotChecker:
         self.MIN_CAPACITY = 0
 
         now = datetime.datetime.now()
-        for i in range(5):
+        for i in range(self.NUM_WEEKS):
             target_time = now + datetime.timedelta(days=7 * i)
             self.DATES.append(target_time.strftime("%d-%m-%Y"))
 
